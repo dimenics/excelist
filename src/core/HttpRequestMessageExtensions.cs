@@ -16,6 +16,8 @@ namespace System.Net.Http
 
         public static HttpResponseMessage ExportToExcel<T>(this HttpRequestMessage request, IEnumerable<T> records)
         {
+            ExcelPackage.LicenseContext = LicenseContext.NonCommercial;
+
             using ExcelPackage package = new ExcelPackage();
             ExcelWorksheet worksheet = package.Workbook.Worksheets.Add("Logs");
 
