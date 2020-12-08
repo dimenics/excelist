@@ -14,12 +14,11 @@
     <PackageIconUrl>https://github.com/dimenics/dimenics/blob/master/assets/dimenicslogo.png?raw=true</PackageIconUrl>
     <RepositoryType>git</RepositoryType>
     <NeutralLanguage>en</NeutralLanguage>
-    <Version>0.0.1-alpha.5</Version>
+    <Version>0.0.1-alpha.7</Version>
   </PropertyGroup>
 
   <ItemGroup>
     <PackageReference Include="EPPlus" Version="5.4.2" />
-    <PackageReference Include="Humanizer.Core" Version="2.8.26" />
   </ItemGroup>
 
   <ItemGroup>

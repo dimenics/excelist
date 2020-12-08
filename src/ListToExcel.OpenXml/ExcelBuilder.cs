@@ -1,7 +1,5 @@
-﻿using System.Drawing;
-using System.Linq;
+﻿using System.Linq;
 using System.Reflection;
-using Humanizer;
 using OfficeOpenXml;
 using OfficeOpenXml.Style;
 
@@ -10,15 +8,20 @@ namespace System.Collections.Generic
     internal class ExcelBuilder<T>
     {
         private readonly IEnumerable<T> _collection;
-        private ExcelPackage _package;
-        private ExcelWorksheet _worksheet;
+        private readonly ExcelSettings _settings;
 
-        internal ExcelBuilder(IEnumerable<T> collection)
+        private readonly ExcelPackage _package;
+        private readonly ExcelWorksheet _worksheet;
+
+        internal ExcelBuilder(IEnumerable<T> collection, ExcelSettings settings)
         {
             _collection = collection;
+            _settings = settings;
+
+            ExcelPackage.LicenseContext = LicenseContext.NonCommercial;
 
             _package = new ExcelPackage();
-            _worksheet = _package.Workbook.Worksheets.Add(nameof(T).Pluralize());
+            _worksheet = _package.Workbook.Worksheets.Add(_settings.SheetName);
         }
 
         internal ExcelBuilder<T> CreateHeaders()
@@ -29,8 +32,8 @@ namespace System.Collections.Generic
             {
                 range.Style.Font.Bold = true;
                 range.Style.Fill.PatternType = ExcelFillStyle.Solid;
-                range.Style.Fill.BackgroundColor.SetColor(Color.Purple);
-                range.Style.Font.Color.SetColor(Color.White);
+                range.Style.Fill.BackgroundColor.SetColor(_settings.BackgroundColor);
+                range.Style.Font.Color.SetColor(_settings.Color);
             }
 
             for (int i = 0; i < properties.Length; i++)
