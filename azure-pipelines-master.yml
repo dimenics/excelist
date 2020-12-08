@@ -8,12 +8,6 @@ variables:
   BuildPlatform: "Any CPU"
 
 steps:
-  - task: NuGetToolInstaller@1
-    displayName: "Use NuGet 5.x"
-    inputs:
-      versionSpec: 5.x
-      checkLatest: true
-
   - task: DotNetCoreCLI@2
     displayName: "dotnet restore"
     inputs:

@@ -2,7 +2,9 @@
 
 # List to Excel
 
-Simple library to convert IEnumerable<T> to an Excel sheet.
+[![Build Status](https://dev.azure.com/dimenicsbe/Utilities/_apis/build/status/dimenics.list-to-excel?branchName=master)](https://dev.azure.com/dimenicsbe/Utilities/_build/latest?definitionId=184&branchName=master)
+
+Simple library to convert `IEnumerable<T>` to an Excel sheet.
 
 ## About the project
 
