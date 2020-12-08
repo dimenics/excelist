@@ -13,7 +13,6 @@ steps:
     inputs:
       command: restore
       projects: "**/ListToExcel.sln"
-      feedsToUse: config
 
   - task: MSBuild@1
     displayName: "Build solution"
