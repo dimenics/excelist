@@ -18,6 +18,12 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <PackageReference Include="EPPlus" Version="5.4.2" />
+    <PackageReference Include="Humanizer.Core" Version="2.8.26" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\core\ListToExcel.csproj" />
   </ItemGroup>
 
 </Project>

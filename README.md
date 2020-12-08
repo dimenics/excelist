@@ -12,7 +12,7 @@ Simple library to convert IEnumerable<T> to an Excel sheet.
 
 ## Usage
 
-TO DO
+The center of this project is the `IEnumerableToExcelConverter<in T>` interface.
 
 ## Contributing
 
