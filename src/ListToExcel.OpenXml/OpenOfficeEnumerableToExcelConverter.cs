@@ -3,7 +3,7 @@ using OfficeOpenXml;
 
 namespace System.Collections.Generic
 {
-    public class DefaultEnumerableToExcelConverter<T> : IEnumerableToExcelConverter<T>
+    public class OpenOfficeEnumerableToExcelConverter<T> : IEnumerableToExcelConverter<T>
     {
         public MemoryStream ToExcel(IEnumerable<T> collection)
         {

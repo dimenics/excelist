@@ -14,7 +14,7 @@
     <PackageIconUrl>https://github.com/dimenics/dimenics/blob/master/assets/dimenicslogo.png?raw=true</PackageIconUrl>
     <RepositoryType>git</RepositoryType>
     <NeutralLanguage>en</NeutralLanguage>
-    <Version>0.0.1-alpha.4</Version>
+    <Version>0.0.1-alpha.5</Version>
   </PropertyGroup>
 
   <ItemGroup>
@@ -24,7 +24,6 @@
 
   <ItemGroup>
     <ProjectReference Include="..\core\ListToExcel.csproj" />
-    <ProjectReference Include="..\ListToExcel.OpenXml\ListToExcel.OpenXml.csproj" />
   </ItemGroup>
 
 </Project>
