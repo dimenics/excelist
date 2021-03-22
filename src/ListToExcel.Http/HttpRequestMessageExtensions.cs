@@ -10,7 +10,7 @@ namespace System.Net.Http
         {
             using MemoryStream stream = converter.ToExcel(records);
 
-            ByteArrayContent content = new ByteArrayContent(stream.ToArray());
+            ByteArrayContent content = new(stream.ToArray());
             HttpResponseMessage result = request.CreateResponse(HttpStatusCode.OK);
             result.Content = content;
             result.Content.Headers.ContentType = new MediaTypeHeaderValue("application/octet-stream");

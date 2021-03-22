@@ -19,7 +19,7 @@ namespace System.Collections.Generic
 
         public MemoryStream ToExcel(IEnumerable<T> collection)
         {
-            ExcelBuilder<T> builder = new ExcelBuilder<T>(collection, _settings);
+            ExcelBuilder<T> builder = new(collection, _settings);
             ExcelPackage package = builder.CreateHeaders().CreateRows().Conclude().Build();
 
             return new MemoryStream(package.GetAsByteArray());
