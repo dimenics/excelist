@@ -8,6 +8,6 @@ namespace System.Collections.Generic
         
         public Color Color { get; set; }
 
-        public string SheetName { get; set; }
+        public string SheetName { get; set; } = "Sheet1";
     }
 }

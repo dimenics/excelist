@@ -12,12 +12,12 @@ steps:
     displayName: "dotnet restore"
     inputs:
       command: restore
-      projects: "**/ListToExcel.sln"
+      projects: "**/Excelist.sln"
 
   - task: MSBuild@1
     displayName: "Build solution"
     inputs:
-      solution: "**/ListToExcel.sln"
+      solution: "**/Excelist.sln"
       platform: "$(BuildPlatform)"
       configuration: "$(BuildConfiguration)"
 

@@ -6,7 +6,7 @@ namespace System.Net.Http
 {
     public static class HttpRequestMessageExtensions
     {
-        public static HttpResponseMessage ExportToExcel<T>(this HttpRequestMessage request, IEnumerable<T> records, IEnumerableToExcelConverter<T> converter)
+        public static HttpResponseMessage ExportToExcel<T>(this HttpRequestMessage request, IEnumerable<T> records, IEnumerableToExcelExporter<T> converter)
         {
             using MemoryStream stream = converter.ToExcel(records);
 

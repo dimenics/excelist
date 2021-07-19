@@ -8,13 +8,13 @@
     <Company>Dimenics</Company>
     <Product>Dimenics</Product>
     <Description>Export IEnumerable&lt;T&gt; to Excel.</Description>
-    <Copyright>Copyright 2020</Copyright>
+    <Copyright>Copyright 2021</Copyright>
     <PackageLicenseExpression>MIT</PackageLicenseExpression>
     <RepositoryUrl>https://github.com/dimenics/list-to-excel</RepositoryUrl>
     <PackageIconUrl>https://github.com/dimenics/dimenics/blob/master/assets/dimenicslogo.png?raw=true</PackageIconUrl>
     <RepositoryType>git</RepositoryType>
     <NeutralLanguage>en</NeutralLanguage>
-    <Version>0.0.1-alpha.6</Version>
+    <Version>0.0.1-alpha.1</Version>
     <IncludeSymbols>true</IncludeSymbols>
     <SymbolPackageFormat>snupkg</SymbolPackageFormat>
   </PropertyGroup>

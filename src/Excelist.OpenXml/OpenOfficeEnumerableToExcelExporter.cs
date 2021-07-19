@@ -3,16 +3,16 @@ using OfficeOpenXml;
 
 namespace System.Collections.Generic
 {
-    public class OpenOfficeEnumerableToExcelConverter<T> : IEnumerableToExcelConverter<T>
+    public class OpenOfficeEnumerableToExcelExporter<T> : IEnumerableToExcelExporter<T>
     {
         private readonly ExcelSettings _settings;
 
-        public OpenOfficeEnumerableToExcelConverter()
+        public OpenOfficeEnumerableToExcelExporter()
         {
             _settings = new ExcelSettings();
         }
 
-        public OpenOfficeEnumerableToExcelConverter(ExcelSettings settings)
+        public OpenOfficeEnumerableToExcelExporter(ExcelSettings settings)
         {
             _settings = settings;
         }

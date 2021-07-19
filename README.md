@@ -1,8 +1,12 @@
 <p align="center"><img src="assets/spreadsheet.svg?raw=true" width="350" alt=""></p>
 
-# List to Excel
+<h1 align="center"> Excelist </h1>
 
-[![Build Status](https://dev.azure.com/dimenicsbe/Utilities/_apis/build/status/dimenics.list-to-excel?branchName=master)](https://dev.azure.com/dimenicsbe/Utilities/_build/latest?definitionId=184&branchName=master)
+<div align="center">
+<img src="https://dev.azure.com/dimenicsbe/Utilities/_apis/build/status/dimenics.list-to-excel?branchName=master" />
+<img src="http://img.shields.io/:license-mit-blue.svg?style=flat-square">
+<img src="https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=flat-square" />
+</div>
 
 Simple library to convert `IEnumerable<T>` to an Excel sheet.
 
@@ -16,27 +20,27 @@ This project then does not introduce any new capabilities. It is merely a generi
 
 > 🚧 The packages are not available yet on NuGet.
 
-Use the package manager NuGet to install the base library of ListToExcel:
+Use the package manager NuGet to install the base library of Excelist:
 
-`dotnet add package ListToExcel`
+`dotnet add package Excelist`
 
-Next it is up to you to decide which *implementations* you want to use:
+Next it is up to you to decide which _implementations_ you want to use:
 
-| Implementation             | Command                               |
-| ------------------- | ------------------------------------- |
-| OpenXml | `dotnet add package ListToExcel.OpenXml`  |
+| Implementation | Command                               |
+| -------------- | ------------------------------------- |
+| OpenXml        | `dotnet add package Excelist.OpenXml` |
 
 To speed up the development cycle, there are extension methods at your disposal:
 
-| Extension             | Command                               |
-| ------------------- | ------------------------------------- |
-| System.Net.Http | `dotnet add package ListToExcel.Http`  |
+| Extension       | Command                            |
+| --------------- | ---------------------------------- |
+| System.Net.Http | `dotnet add package Excelist.Http` |
 
 ## Usage
 
-The center of this project is the `IEnumerableToExcelConverter<in T>` interface. The implementations are hidden away through this interface, and as such, can be swapped effortlessly for another implementation. 
+The center of this project is the `IEnumerableToExcelConverter<in T>` interface. The implementations are hidden away through this interface, and as such, can be swapped effortlessly for another implementation.
 
-For example, in a good old ASP.NET Web API project, you can use the `ListToExcel.Http` library to return an Excel file as a response:
+For example, in a good old ASP.NET Web API project, you can use the `Excelist.Http` library to return an Excel file as a response:
 
 ```csharp
 public class LogsApiController : ApiController
@@ -56,7 +60,3 @@ public class LogsApiController : ApiController
 ![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=flat-square)
 
 Pull requests are welcome. Please check out the contribution and code of conduct guidelines.
-
-## License
-
-[![License](http://img.shields.io/:license-mit-blue.svg?style=flat-square)](http://badges.mit-license.org)
