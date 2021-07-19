@@ -3,11 +3,13 @@
 <h1 align="center"> Excelist </h1>
 
 <div align="center">
-<img src="https://dev.azure.com/dimenicsbe/Utilities/_apis/build/status/dimenics.list-to-excel?branchName=master" />
+<img src="https://dev.azure.com/dimenicsbe/Utilities/_apis/build/status/dimenics.excelist?branchName=master" />
+<img src="https://img.shields.io/azure-devops/coverage/dimenicsbe/utilities/193?style=flat-square&color=blue" />
 <img src="http://img.shields.io/:license-mit-blue.svg?style=flat-square">
-<img src="https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=flat-square" />
+<img src="https://img.shields.io/badge/PRs-welcome-blue.svg?style=flat-square" />
 </div>
 
+<br />
 Simple library to convert `IEnumerable<T>` to an Excel sheet.
 
 ## About the project
@@ -17,8 +19,6 @@ The purpose of this project is to detach the implementation of Excel libraries f
 This project then does not introduce any new capabilities. It is merely a generic wrapper that allows you to inject dependencies into your code base and should give you peace of mind that your investments in your code are safe and should not be impacted if you decide to change Excel export libraries, for whatever reason that may be.
 
 ## Installation
-
-> 🚧 The packages are not available yet on NuGet.
 
 Use the package manager NuGet to install the base library of Excelist:
 
