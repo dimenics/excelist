@@ -4,14 +4,14 @@
     <TargetFrameworks>net461;net5.0</TargetFrameworks>
     <LangVersion>latest</LangVersion>
     <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
-    <Authors>Dimenics</Authors>
-    <Company>Dimenics</Company>
-    <Product>Dimenics</Product>
+    <Authors>Dime Software</Authors>
+    <Company>Dime Software</Company>
+    <Product>Dime Software</Product>
     <Description>Export IEnumerable&lt;T&gt; to Excel.</Description>
     <Copyright>Copyright 2021</Copyright>
     <PackageLicenseExpression>MIT</PackageLicenseExpression>
     <RepositoryUrl>https://github.com/dimenics/list-to-excel</RepositoryUrl>
-    <PackageIconUrl>https://github.com/dimenics/dimenics/blob/master/assets/dimenicslogo.png?raw=true</PackageIconUrl>
+    <PackageIconUrl>https://cdn.dime-software.com/dime-software/logo-shape.png</PackageIconUrl>
     <RepositoryType>git</RepositoryType>
     <NeutralLanguage>en</NeutralLanguage>
     <Version>0.0.1-alpha.1</Version>
