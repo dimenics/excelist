@@ -3,8 +3,8 @@
 <h1 align="center"> Excelist </h1>
 
 <div align="center">
-<img src="https://dev.azure.com/dimenicsbe/Utilities/_apis/build/status/dimenics.excelist?branchName=master" />
-<img src="https://img.shields.io/azure-devops/coverage/dimenicsbe/utilities/193?style=flat-square&color=blue" />
+<img src="https://dev.azure.com/dimesoftware/Utilities/_apis/build/status/dimenics.excelist?branchName=master" />
+<img src="https://img.shields.io/azure-devops/coverage/dimesoftware/utilities/193?style=flat-square&color=blue" />
 <img src="http://img.shields.io/:license-mit-blue.svg?style=flat-square">
 <img src="https://img.shields.io/badge/PRs-welcome-blue.svg?style=flat-square" />
 </div>
