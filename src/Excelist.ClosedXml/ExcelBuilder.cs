@@ -63,6 +63,7 @@ namespace System.Collections.Generic
             _workBook.SaveAs(ms);
             _workBook.Dispose();
 
+            ms.Position = 0;
             return ms;
         }
     }
