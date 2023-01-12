@@ -9,11 +9,13 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Excelist.Http", "Excelist.H
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Excelist.OpenXml", "Excelist.OpenXml\Excelist.OpenXml.csproj", "{3FC5C7F7-5072-4E17-A282-11746A973391}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Excelist.Http.Tests", "Excelist.Http.Tests\Excelist.Http.Tests.csproj", "{6E426BA0-F09E-4796-92E4-7021FA5E608E}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Excelist.Http.Tests", "Excelist.Http.Tests\Excelist.Http.Tests.csproj", "{6E426BA0-F09E-4796-92E4-7021FA5E608E}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Excelist.OpenXml.Tests", "Excelist.OpenXml.Tests\Excelist.OpenXml.Tests.csproj", "{F1C06DF6-31D4-4124-94A7-C04185271456}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Excelist.OpenXml.Tests", "Excelist.OpenXml.Tests\Excelist.OpenXml.Tests.csproj", "{F1C06DF6-31D4-4124-94A7-C04185271456}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Tests", "Tests", "{9E993B66-AB0E-4AB1-9EC5-664331B2C116}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Excelist.ClosedXml", "Excelist.ClosedXml\Excelist.ClosedXml.csproj", "{5844D65C-7D33-40E9-AF11-7B8E13FDA08B}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -41,6 +43,10 @@ Global
 		{F1C06DF6-31D4-4124-94A7-C04185271456}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{F1C06DF6-31D4-4124-94A7-C04185271456}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{F1C06DF6-31D4-4124-94A7-C04185271456}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5844D65C-7D33-40E9-AF11-7B8E13FDA08B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5844D65C-7D33-40E9-AF11-7B8E13FDA08B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5844D65C-7D33-40E9-AF11-7B8E13FDA08B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5844D65C-7D33-40E9-AF11-7B8E13FDA08B}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
