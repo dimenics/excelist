@@ -1,5 +1,6 @@
 ﻿using System.Reflection;
 using ClosedXML.Excel;
+using ClosedXML.Graphics;
 
 namespace System.Collections.Generic
 {
@@ -13,6 +14,8 @@ namespace System.Collections.Generic
 
         internal ExcelBuilder(IEnumerable<T> collection, ExcelSettings settings)
         {
+            LoadOptions.DefaultGraphicEngine = new DefaultGraphicEngine(settings.Font);
+
             _collection = collection;
             _settings = settings;
 
