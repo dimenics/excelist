@@ -1,4 +1,4 @@
-﻿using System.IO;
+﻿using ClosedXML.Excel;
 
 namespace System.Collections.Generic
 {
@@ -8,7 +8,7 @@ namespace System.Collections.Generic
 
         public EnumerableToExcelExporter()
         {
-            _settings = new ExcelSettings();
+            _settings = new ExcelSettings() { Color = XLColor.White, BackgroundColor = XLColor.Purple };
         }
 
         public EnumerableToExcelExporter(ExcelSettings settings)

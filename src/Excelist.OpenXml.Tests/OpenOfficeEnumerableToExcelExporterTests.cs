@@ -13,7 +13,7 @@ namespace Excelist.OpenXml.Tests
         {
             IEnumerableToExcelExporter<Customer> exporter = new OpenOfficeEnumerableToExcelExporter<Customer>();
 
-            List<Customer> customers = new List<Customer>()
+            List<Customer> customers = new()
             {
                 new Customer()
                 {
@@ -45,7 +45,7 @@ namespace Excelist.OpenXml.Tests
                     SheetName = "Customers"
                 });
 
-            List<Customer> customers = new List<Customer>()
+            List<Customer> customers = new()
             {
                 new Customer()
                 {

@@ -14,7 +14,9 @@ namespace System.Collections.Generic
 
         internal ExcelBuilder(IEnumerable<T> collection, ExcelSettings settings)
         {
-            LoadOptions.DefaultGraphicEngine = new DefaultGraphicEngine(settings.Font);
+            Assembly assembly = typeof(ExcelBuilder<T>).Assembly;
+            using Stream fallbackFontStream = assembly.GetManifestResourceStream("Excelist.ClosedXml.Carlito.ttf");
+            LoadOptions.DefaultGraphicEngine = DefaultGraphicEngine.CreateWithFontsAndSystemFonts(fallbackFontStream);
 
             _collection = collection;
             _settings = settings;

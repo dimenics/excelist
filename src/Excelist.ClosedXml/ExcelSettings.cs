@@ -11,6 +11,6 @@ namespace System.Collections.Generic
 
         public string SheetName { get; set; } = "Sheet1";
 
-        public string Font { get; set; } = "Monospace";
+        public string Font { get; set; } = "Carlito";
     }
 }

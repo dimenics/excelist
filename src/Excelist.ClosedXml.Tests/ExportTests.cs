@@ -1,15 +1,13 @@
-using Microsoft.VisualStudio.TestTools.UnitTesting;
-using System.Collections.Generic;
-using System.Net.Http;
-
-namespace Excelist.Http.Tests
+namespace Excelist.ClosedXml.Tests
 {
     [TestClass]
-    public class HttpRequestMessageExtensionsTests
+    public class ClosedXmlExcelExporterTests
     {
         [TestMethod]
-        public void ExportToExcel()
+        public void ToExcel_DefaultSettings_ShouldExport()
         {
+            IEnumerableToExcelExporter<Customer> exporter = new EnumerableToExcelExporter<Customer>();
+
             List<Customer> customers = new()
             {
                 new Customer()
@@ -27,12 +25,8 @@ namespace Excelist.Http.Tests
                 }
             };
 
-            IEnumerableToExcelExporter<Customer> exporter = new OpenOfficeEnumerableToExcelExporter<Customer>();
-
-            HttpRequestMessage request = new();
-            HttpResponseMessage response = request.ExportToExcel(customers, exporter);
-
-            Assert.IsTrue(response.Content.Headers.ContentLength == 2982);
+            MemoryStream memoryStream = exporter.ToExcel(customers);
+            Assert.IsTrue(memoryStream.Length == 6529);
         }
     }
 }
