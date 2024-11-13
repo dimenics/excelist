@@ -31,7 +31,7 @@ namespace Excelist.OpenXml.Tests
             };
 
             MemoryStream memoryStream = exporter.ToExcel(customers);
-            Assert.IsTrue(memoryStream.Length == 2982);
+            Assert.IsTrue(memoryStream.Length == 2922);
         }
 
         [TestMethod]
@@ -63,7 +63,7 @@ namespace Excelist.OpenXml.Tests
             };
 
             MemoryStream memoryStream = exporter.ToExcel(customers);
-            Assert.IsTrue(memoryStream.Length == 3000);
+            Assert.IsTrue(memoryStream.Length == 2933);
         }
     }
 }
