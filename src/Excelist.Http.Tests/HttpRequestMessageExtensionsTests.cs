@@ -32,7 +32,7 @@ namespace Excelist.Http.Tests
             HttpRequestMessage request = new();
             HttpResponseMessage response = request.ExportToExcel(customers, exporter);
 
-            Assert.IsTrue(response.Content.Headers.ContentLength == 2982);
+            Assert.IsTrue(response.Content.Headers.ContentLength == 2922);
         }
     }
 }

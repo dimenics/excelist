@@ -8,8 +8,8 @@ namespace Excelist.ClosedXml.Tests
         {
             IEnumerableToExcelExporter<Customer> exporter = new EnumerableToExcelExporter<Customer>();
 
-            List<Customer> customers = new()
-            {
+            List<Customer> customers =
+            [
                 new Customer()
                 {
                     Name = "Beverley Wyndhame",
@@ -23,10 +23,10 @@ namespace Excelist.ClosedXml.Tests
                     Address = "Lodorp 3113, Maffe, Namur, Belgium",
                     Email = "bbuckley@contoso.com"
                 }
-            };
+            ];
 
             MemoryStream memoryStream = exporter.ToExcel(customers);
-            Assert.IsTrue(memoryStream.Length == 6529);
+            Assert.IsTrue(memoryStream.Length == 6582);
         }
     }
 }

@@ -1,25 +1,25 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
 
-  <PropertyGroup>
-    <TargetFrameworks>net8.0</TargetFrameworks>
-    <LangVersion>latest</LangVersion>
-    <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
-    <Authors>Dime Software</Authors>
-    <Company>Dime Software</Company>
-    <Product>Dime Software</Product>
-    <Description>Export IEnumerable&lt;T&gt; to Excel.</Description>
-    <Copyright>Copyright 2023</Copyright>
-    <PackageLicenseExpression>MIT</PackageLicenseExpression>
-    <RepositoryUrl>https://github.com/dimesoftware/excelist</RepositoryUrl>
-    <PackageIconUrl>https://cdn.dime-software.com/dime-software/logo-shape.png</PackageIconUrl>
-    <RepositoryType>git</RepositoryType>
-    <NeutralLanguage>en</NeutralLanguage>
-    <Version>1.0.0</Version>
-    <IncludeSymbols>true</IncludeSymbols>
-    <SymbolPackageFormat>snupkg</SymbolPackageFormat>
-  </PropertyGroup>
+	<PropertyGroup>
+		<TargetFrameworks>net8.0;net9.0</TargetFrameworks>
+		<LangVersion>latest</LangVersion>
+		<GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+		<Authors>Dime Software</Authors>
+		<Company>Dime Software</Company>
+		<Product>Dime Software</Product>
+		<Description>Export IEnumerable&lt;T&gt; to Excel.</Description>
+		<Copyright>Copyright 2023</Copyright>
+		<PackageLicenseExpression>MIT</PackageLicenseExpression>
+		<RepositoryUrl>https://github.com/dimesoftware/excelist</RepositoryUrl>
+		<PackageIconUrl>https://cdn.dime-software.com/dime-software/logo-shape.png</PackageIconUrl>
+		<RepositoryType>git</RepositoryType>
+		<NeutralLanguage>en</NeutralLanguage>
+		<Version>1.0.1</Version>
+		<IncludeSymbols>true</IncludeSymbols>
+		<SymbolPackageFormat>snupkg</SymbolPackageFormat>
+	</PropertyGroup>
 
-  <ItemGroup>
-  </ItemGroup>
+	<ItemGroup>
+	</ItemGroup>
 
 </Project>
